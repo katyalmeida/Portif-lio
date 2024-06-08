@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Git from '../../assets/git.png'
 import Linkedin from '../../assets/linkedin.png';
 import Tela from '../../assets/tela.png';
@@ -19,10 +19,25 @@ import {
 
 
 const App = () => {
+  const [refImage, setRefImage] = useState(window.innerWidth);
+
+
+  useEffect(() => {
+    const captureWindow = () => {
+      setRefImage(window.innerWidth);
+    };
+
+    window.addEventListener('resize', captureWindow)
+
+    return () => {
+      window.removeEventListener('resize', captureWindow)
+    };
+
+  },[]);
 
   return (
     <Container>
-<ContainerItens>   
+    <ContainerItens>   
     
     <ContainerButton>
     <a href="#resumo">
@@ -56,8 +71,12 @@ const App = () => {
 
 
 
+    { refImage >= 1300 ? (
+       <img src={Tela} className='background'/>
+    ) : (
+      <div></div>
+    )}
 
-    <img src={Tela} className='background'/>
     </Container>
 
   )

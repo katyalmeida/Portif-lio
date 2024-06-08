@@ -47,7 +47,7 @@ padding:80px 120px;
 cursor: pointer;
 
 @media (max-width: 768px){
-    padding: 10px 40px;
+    padding: 10px 20px;
 
 }
 
@@ -55,7 +55,7 @@ cursor: pointer;
 
 export const H1 = styled.h1`
 
-font-size: 24px;
+font-size: 100%;
 font-weight: 200;
 @media (max-width: 768px){
     font-size: 15px;
@@ -75,7 +75,11 @@ font-weight: 1000;
 
 
 @media (max-width: 768px){
-    font-size: 35px;
+    font-size: 90px;
+}
+
+@media (max-width: 420px){
+    font-size: 32px;
 }
 
 
@@ -85,10 +89,17 @@ font-weight: 800;
 font-size: 42px;
 color: #4169E1;
 
-@media (max-width: 768px){
-    font-size: 15px;
+@media (max-width: 1000px){
+    font-size: 32px;
     font-weight: 800;
 }
+
+@media (max-width: 420px){
+    font-size: 16px;
+}
+
+
+
 `;
 
 export const ContainerTextos = styled.div`
@@ -190,6 +201,3 @@ margin-top: -110px;
 
 
 `
-
-
-
