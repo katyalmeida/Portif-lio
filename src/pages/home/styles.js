@@ -47,9 +47,13 @@ padding:80px 120px;
 cursor: pointer;
 
 @media (max-width: 768px){
-    padding: 10px 20px;
+    padding: 15px 20px;
 
 }
+/* @media (max-width: 460px){
+
+    margin-left: 150px;
+} */
 
  `
 
@@ -75,12 +79,21 @@ font-weight: 1000;
 
 
 @media (max-width: 768px){
-    font-size: 90px;
+    font-size: 40px;
 }
 
-@media (max-width: 420px){
+
+
+@media (max-width: 460px){
+    font-size: 35px;
+}
+@media (max-width: 431px){
     font-size: 32px;
 }
+/* @media (max-width: 1286px){
+    font-size: 100px;
+
+} */
 
 
 `;
@@ -89,13 +102,16 @@ font-weight: 800;
 font-size: 42px;
 color: #4169E1;
 
-@media (max-width: 1000px){
+@media (max-width: 1286px){
     font-size: 32px;
     font-weight: 800;
 }
+@media (max-width: 768px){
+    font-size: 20px;
+}
 
-@media (max-width: 420px){
-    font-size: 16px;
+@media (max-width: 431px){
+    font-size: 18px;
 }
 
 
@@ -105,6 +121,7 @@ color: #4169E1;
 export const ContainerTextos = styled.div`
 margin-top: 80px;
 margin-bottom: 180px;
+
 
 
 
@@ -121,15 +138,31 @@ font-weight: 1000;
 color: white;
 cursor: pointer;
 box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+
+
 @media (max-width: 768px) {
 
 
-    width: 80px;
-height: 22px;
-font-size: 10px;
+    width: 150px;
+height: 30px;
+font-size: 14px;
 font-weight: 700;
+background-color: #373333;;
+}
+@media (max-width: 460px){
+    
+    width: 80px;
+height: 25px;
+font-size: 10px;
+}
+@media (max-width: 431px) {
 
 
+
+    width: 100px;
+height: 25px;
+font-size: 10px;
+    
 }
 
 
@@ -153,9 +186,12 @@ gap: 35px;
 
 @media (max-width: 768px) {
     display: flex;
-gap: 30px; 
-margin-top: 10px;
+ gap: 30px; 
+margin-top: 30px;
+justify-content: center;
 }
+
+
 
 `
 
@@ -184,18 +220,20 @@ gap: 30px;
 
 img{
     width: 60px;
-
+    
   
 }
 
 @media (max-width: 768px) {
    img{
-    width:20px;
+    width:32px;
+    
  }
  
 display: flex;
 gap: 12px;
-margin-top: -110px;
+margin-top: -70px;
+margin-bottom: 30px;
   }
 
 

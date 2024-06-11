@@ -32,7 +32,8 @@ opacity: 0.50;
 @media (max-width: 768px){
     display: flex;
 flex-direction: column;
-margin-top: 0px;
+/* margin-top: 15px; */
+
 width: 130px;
 font-size: 10px;
 height: 30px;

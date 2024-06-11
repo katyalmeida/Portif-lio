@@ -10,20 +10,38 @@ width: 100%;
 height: 160px;
 display: flex;
 align-items: center;
-gap:550px;
+justify-content: space-between;
+padding: 0 190px;
 
+
+@media (max-width: 1286px){
+ height: 130px; 
+ padding: 0 60px;
+}
 @media (max-width: 768px){
     width: 100%;
     height: 80px;
     gap:20px;
 
 }
+@media (max-width: 596px){
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+}
+@media (max-width: 431px){
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+
 
 
 `
 
 export const ContainerText= styled.div`
-margin-left: 220px;
+/* margin-left: 220px; */
 cursor: pointer;
 
 h1{
@@ -43,18 +61,30 @@ h2{
 
 
 }
-@media (max-width: 768px){
-    margin-left: 30px;
 
-    
+@media (max-width: 1286px){
 h1{
-    font-size: 20px;
-}
+    font-size: 28px;
+}}
 
-h2{
-    font-size: 14px;
-}
-}
+
+@media (max-width: 596px){
+    h1{        font-size: 28px;
+    }
+    }
+    @media (max-width: 431px){
+h1{
+    font-size: 26px;
+}}
+@media (max-width: 596px){
+    h2{        font-size: 14px;
+    }
+    }
+@media (max-width: 431px){
+    h2{        font-size: 14px;
+    }
+    }
+   
 `
 
 export const ContainerImage = styled.div`
@@ -86,6 +116,12 @@ content: url(${Whatsapp});
     }
 
 }
+@media (max-width: 1286px){
+ .whats{width:40px;}
+    .linkedin{ width:40px;}
+    .git{width:40px;}
+
+}
 @media (max-width: 768px){
     display: flex;
  gap:10px;
@@ -95,6 +131,22 @@ content: url(${Whatsapp});
 
 
 }
+@media (max-width: 596px){
+    .whats{width:30px;}
+    .linkedin{ width:30px;}
+    .git{width:30px;}
+}
+
+@media (max-width: 431px){
+ .whats{width:25px;}
+    .linkedin{ width:25px;}
+    .git{width:25px;}
+
+}
+
+
+
+
 
 `
 

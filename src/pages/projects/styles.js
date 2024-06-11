@@ -11,6 +11,13 @@ justify-content: center;
   min-height: 100%;
 }
 
+@media (max-width: 431px){
+  min-height: 80%;
+
+}
+
+
+
 
 
 
@@ -25,6 +32,8 @@ export const ContainerTextos = styled.div`
 display: flex;
 align-items:center;
 
+
+
 h1{
     font-size: 80px;
     padding: 40px;
@@ -32,6 +41,8 @@ h1{
     margin-top: 20px;
     
 }
+
+
 
 @media (max-width: 768px){
 h1{

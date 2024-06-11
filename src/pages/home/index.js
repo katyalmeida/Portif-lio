@@ -34,11 +34,37 @@ const App = () => {
     };
 
   },[]);
+  
+  
+  
+    const [refElementoVisivel, setRefElementoVisivel] = useState(window.innerWidth);
+  
+    useEffect(() => {
+      const captureWindow = () => {
+        setRefElementoVisivel(window.innerWidth);
+      };
+  
+      captureWindow(); 
+  
+      window.addEventListener('resize', captureWindow);
+  
+      return () => {
+        window.removeEventListener('resize', captureWindow);
+      };
+    }, []);
 
+  
   return (
     <Container>
+        
+       
+      {refElementoVisivel < 768 && ( 
+        <div style={{ background: "#4169E1", width: "100%", height: "90px" }}>
+        </div>
+      )}
+  
+
     <ContainerItens>   
-    
     <ContainerButton>
     <a href="#resumo">
   <Button>Resumo</Button>
@@ -66,7 +92,10 @@ const App = () => {
 
        
         </ContainerItens>
-   
+       {  refElementoVisivel < 768 && (  <div style={{background:"black",width:"100%", height:"45px"}}></div>)}
+       
+     
+
  
 
 

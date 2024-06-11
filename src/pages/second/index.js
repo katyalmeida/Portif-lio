@@ -22,6 +22,7 @@ const Second = () => {
 
     return (
         <Container id='resumo'>
+            
 
             <Image alt="foto-katiane" src={Katiane} />
 
