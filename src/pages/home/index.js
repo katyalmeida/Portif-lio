@@ -59,8 +59,7 @@ const App = () => {
         
        
       {refElementoVisivel < 768 && ( 
-        <div style={{ background: "#4169E1", width: "100%", height: "90px" }}>
-        </div>
+        <div style={{ background: "#4169E1", width: "100%", height: "90px" }}></div>
       )}
   
 

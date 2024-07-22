@@ -17,7 +17,7 @@ function Card() {
       {projectsArray &&
         projectsArray.map((projetos) => (
           <MapAjust>
-            <ContainerDetails key={projetos.id}>
+            <ContainerDetails key={projetos.id} validator={projetos.first}>
               <Carrousel>
                 <Image src={projetos.img1} />
               </Carrousel>

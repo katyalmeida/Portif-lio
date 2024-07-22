@@ -56,7 +56,8 @@ padding: 20px;
     color:  black;
     font-weight: 800;
     color: white;
-    font-size:23px;
+    font-size:21px;
+    margin-bottom: 20px;
 /* margin-top:-30px; */
 
 
@@ -64,7 +65,7 @@ padding: 20px;
 
    
     @media (max-width: 1286px){
-        font-size:12px;
+        font-size:14px;
 
         
     
@@ -75,7 +76,7 @@ font-size:13px;
 /* margin-top: 10px;} */}
 @media (max-width: 431px){
     
-    font-size:14px;
+    font-size:16px;
     margin-top: 2px;}
    
 }
@@ -90,7 +91,7 @@ font-size:13px;
     font-size: 15px;
     color: white;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 
   
     @media (max-width: 1285px){
@@ -114,14 +115,13 @@ font-size:13px;
 
 `
 export const ContainerDetails = styled.div`
- background-color: black;
+ background-color: ${ props => props.validator ? 'black' : 'white' };
  display: flex;
  width: 100%;
  height: 480px;
  justify-content: center;
 
  @media (max-width: 431px){
-        background-color: black;
         height: 375px;
 
 }
