@@ -9,7 +9,7 @@ function Footer() {
     <Container id="contatos">
       <ContainerText>
         <h1>Katiane Almeida</h1>
-        <h2>Desenvolvedora Full-Stack</h2>
+        <h2>Desenvolvedora Front End</h2>
       </ContainerText>
 
       <ContainerImage>

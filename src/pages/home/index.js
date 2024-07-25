@@ -80,7 +80,7 @@ const App = () => {
         <ContainerTextos>
           <H1> Olá eu sou,</H1>
           <H2>Katiane Almeida</H2>
-          <H3>DESENVOLVEDORA FULL-STACK</H3>
+          <H3>DESENVOLVEDORA FRONT END</H3>
         </ContainerTextos>
 
         <ContainerImage>

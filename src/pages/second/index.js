@@ -29,7 +29,7 @@ const Second = () => {
             <ContainerTextos>
                 <H1>Sobre mim</H1>
                 <P>
-                    Entusiasta da tecnologia e estudante dedicada, sempre buscando me atualizar e aprimorar minhas habilidades. Atualmente em transição de carreira para a área de Desenvolvedora Full-Stack, na programação, utilizo ferramentas e linguagens como JavaScript, React, Node.js e Express com a finalidade de contribuir para o desenvolvimento de projetos e sistemas web. Comprometida a trabalhar com profissionais da área para explorar novas oportunidades e maneiras de adquirir mais conhecimento. Além do desenvolvimento profissional, procuro me desenvolver no âmbito pessoal buscando superar desafios e dar o meu melhor.
+                    Entusiasta da tecnologia e profissional dedicada, sempre buscando me atualizar e aprimorar minhas habilidades. Atualmente, estou em transição de carreira para a área de desenvolvimento Web buscando oportunidades para aplicar meus conhecimentos. Tenho habilidades adquiridas ao desenvolver projetos funcionais, atuando tanto no front-end quanto no back-end, utilizando tecnologias como: JavaScript, Node.js, React, Express.js e Styled-components. Contribuindo para o desenvolvimento de sistemas, estou sempre disposta a colaborar com novos projetos e a aproveitar oportunidades profissionais. Busco novos desafios que possam contribuir para o meu crescimento, além de trazer inovações e melhorias significativas para a equipe e aos trabalhos em que eu estiver envolvida.
                 </P>
 
             </ContainerTextos>
