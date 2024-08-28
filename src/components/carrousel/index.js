@@ -92,14 +92,22 @@ export default class CarrouselRender extends Component {
             <ContainerText>
               <h1>{projeto.titulo}</h1>
               <p>{projeto.texto}</p>
-              <a href={projeto.botao1} style={{ textDecoration: "none" }}>
+              <a
+                href={projeto.botao1}
+                style={{ textDecoration: "none" }}
+                target="blank"
+              >
                 {projeto.status ? (
                   <Button>VER NO FIGMA</Button>
                 ) : (
                   <Button>VER DEPLOY</Button>
                 )}
               </a>
-              <a href={projeto.botao2} style={{ textDecoration: "none" }}>
+              <a
+                href={projeto.botao2}
+                style={{ textDecoration: "none" }}
+                target="blank"
+              >
                 <Button style={{ backgroundColor: "#FF8C00", color: "black" }}>
                   REPOSITÓRIO GIT
                 </Button>
