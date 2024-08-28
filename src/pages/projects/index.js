@@ -1,37 +1,32 @@
-import React from 'react';
-import Card from '../../components/card';
+import CarrouselRender from "../../components/carrousel";
+import React, { useState, useEffect } from "react";
 
-
-
-import {
-    Container,
-    ContainerButton,
-    ContainerTextos,
-} from "./styles";
-
+import { Container, ContainerButton, ContainerTextos } from "./styles";
 
 const App = () => {
-    return (
-        <Container id="projetos">
-            <ContainerTextos>
-                <h1> Projetos </h1>
-            </ContainerTextos>
-            <ContainerButton>
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-           <Card></Card>
-           
+  const updateDimensions = () => {
+    setWindowWidth(window.innerWidth);
+  };
 
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
 
+    return () => {
+      window.removeEventListener("resize", updateDimensions);
+    };
+  }, []);
 
-
-            </ContainerButton>
-
-
-           
-
-
-        </Container>
-
-    )
-}
-export default App
+  return (
+    <Container id="projetos">
+      <ContainerTextos>
+        <h1> Projetos </h1>
+      </ContainerTextos>
+      <ContainerButton windowWidth={windowWidth}>
+        <CarrouselRender></CarrouselRender>
+      </ContainerButton>
+    </Container>
+  );
+};
+export default App;
