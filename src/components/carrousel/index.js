@@ -1,8 +1,9 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component } from "react";
 
 import projeto1 from "../../assets/projetoBruger.png";
 import projeto2 from "../../assets/mock_up.png";
 import projeto3 from "../../assets/projetoDeisy.png";
+import projeto4 from "../../assets/chapanela.png";
 
 import {
   ContainerDetails,
@@ -32,6 +33,16 @@ export default class CarrouselRender extends Component {
       },
       {
         id: 2,
+        titulo: "Chá de Panela",
+        texto:
+          "Este projeto foi desenvolvido para uma cliente que queria um site de fácil acesso para sua lista de chá de panela. A aplicação permite que os usuários visualizem todos os produtos, filtrem por área da casa e escolham itens disponíveis. Para presentear, basta enviar seu nome para assiná-lo. Além disso, é possível enviar qualquer valor via PIX usando um QR Code disponível na tela inicial.",
+        img1: projeto4,
+        botao1: "https://chadepanelalists.netlify.app",
+        botao2: "https://github.com/katyalmeida/projeto-cha-de-panela",
+        validator: "terceiro",
+      },
+      {
+        id: 3,
         titulo: "API de Hamburgueria",
         texto:
           "Este projeto consiste em uma aplicação simples para gerenciar pedidos de uma hamburgueria. A aplicação permite que os clientes façam seus pedidos, além de possibilitar a exclusão e confirmação dos mesmos. As tecnologias usadas foram: Swal Alert, JavaScript, Styled-components, Express, Axios e UUID.",
@@ -41,7 +52,7 @@ export default class CarrouselRender extends Component {
         validator: "segundo",
       },
       {
-        id: 3,
+        id: 4,
         titulo: "Woovi - Desafio Front-end",
         texto:
           "O desafio pede 3 telas web em formato mobile, que oferece suporte ao PIX e suas variações em parcelas com cartão de crédito, criando uma experiência de usuário fluida e moderna. Para alcançar este objetivo, utilizei uma combinação de tecnologias: Swal Alert, JavaScript, React, Styled-components e MUI.",
@@ -50,16 +61,6 @@ export default class CarrouselRender extends Component {
         botao2: "https://github.com/katyalmeida/desafio-woovi",
         validator: "terceiro",
       },
-
-      // {
-      //   id: 4,
-      //   titulo: "Woovi - Desafio Front-end",
-      //   texto:
-      //     "O desafio pede 3 telas web em formato mobile, que oferece suporte ao PIX e suas variações em parcelas com cartão de crédito, criando uma experiência de usuário fluida e moderna. Para alcançar este objetivo, utilizei uma combinação de tecnologias: Swal Alert, JavaScript, React, Styled-components e MUI.",
-      //   img1: projeto2,
-      //   botao1: "https://desafiowoovi.netlify.app",
-      //   botao2: "https://github.com/katyalmeida/desafio-woovi",
-      // },
     ],
     windowWidth: window.innerWidth,
   };
@@ -85,9 +86,7 @@ export default class CarrouselRender extends Component {
         {items.map((projeto) => (
           <MapAjust key={projeto.id}>
             <ContainerDetails validator={projeto.validator}>
-              <Carrousel>
-                <Image src={projeto.img1} />
-              </Carrousel>
+              <Image src={projeto.img1} />
             </ContainerDetails>
             <ContainerText>
               <h1>{projeto.titulo}</h1>
